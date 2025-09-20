@@ -29,3 +29,6 @@ nav, footer, section{
     background-color: #f9f9f9;
 
 }
+.container_header{
+    display: inline-block;
+}
