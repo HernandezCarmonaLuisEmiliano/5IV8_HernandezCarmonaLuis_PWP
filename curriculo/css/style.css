@@ -1,21 +1,21 @@
 *{
     padding: 0;
     margin: 0;
-    color: cadetblue;
+    color: black;
     text-align: center;
 }
 
 html, body{
-    background-color: turquoise;
+    background-color: white;
 }
 .container-main{
-    border: 7px solid #FF88AA;
+    border: 7px solid #f9f9f9;
     border-radius: 50px;
     margin: 2rem;
-    background-color: burlywood;
+    background-color: #7bb3ff;
 }
 nav, section, footer, aside, article{
-    border: 4px solid rgb(233, 67, 197);
+    border: 4px solid #428bca;
     margin: 1rem;
     border-radius: 10px;
     padding: 1rem;
@@ -26,6 +26,6 @@ article, aside{
     height: 300px;
 }
 nav, footer, section{
-    background-color: darkgray;
-    
+    background-color: #f9f9f9;
+
 }
