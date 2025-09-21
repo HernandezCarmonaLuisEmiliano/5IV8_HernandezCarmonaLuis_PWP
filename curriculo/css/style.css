@@ -23,3 +23,90 @@ body{
     gap: 20px;
     align-items: center;
 }
+
+.foto-perfil img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+
+.contacto-info h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ecf0f1;
+}
+
+.contacto-info p {
+    margin: 3px 0;
+    font-size: 0.95em;
+}
+
+.main-nav {
+    margin-top: 20px;
+    background-color: #34495e;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 5px 10px;
+}
+
+.main-nav a:hover {
+    background-color: #2980b9;
+    border-radius: 3px;
+}
+
+.container-body {
+    display: flex;
+    padding: 30px 40px;
+    gap: 30px;
+}
+
+.section-container {
+    flex: 3;
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+
+.section-container:last-of-type {
+    border-right: none;
+    padding-right: 0;
+}
+
+.info-extra {
+    flex: 1;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
