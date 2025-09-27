@@ -25,6 +25,10 @@ header {
 p {
   font-size: 1.1em;
   margin-bottom: 15px;
+  
+}
+
+.Centro {
   max-width: 800px;
   margin: 50px;
   padding: 30px;
