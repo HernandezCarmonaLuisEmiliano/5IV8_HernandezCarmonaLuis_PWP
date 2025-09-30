@@ -1,1 +1,0 @@
-/*Javascript es un lenguaje multiparadigma Acepta la programacion funcional, estructurada POO, y a eventos Dentro de Js, no existe el typado de variables int, string, float, etc. Solo existen 3 tipos de variables de acuerdo al estandar ES6: VAR, LET, CONST */
