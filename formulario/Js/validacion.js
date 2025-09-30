@@ -10,13 +10,14 @@ function validar(formulario){
     var abcok="QWERTYUIOPASDFGHJKLÑZXCVBNMqwertyuiopasdfghjklñzxcvbnm";
     var allValido = true;
 
-    for(var i=0; i < checkstr; i++){
+    for(var i=0; i < checkstr.length; i++){
         var caracteres = checkstr.charAt(i);
         for(var j=0;j<abcok.length;j++){
             if(caracteres == abcok.charAt(j)) break;
         }
         if(j==abcok.length){
-            allValido=false; break;
+            allValido=false;
+            break;
         }
     }
     if(!allValido){
