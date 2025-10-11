@@ -11,10 +11,12 @@ function validarn(e){
 //DELIMITAR EL NUMERO DE DECIMALES
 function interes(){
     var valor = document.getElementById("cantidadi").value;
+    var mes = document.getElementById("mesesi").value;
+    var mesinteres = parseFloat(mes);
 
     var parseo = parseFloat(valor);
     alert(parseo);
-    var interes = parseo*(0.085);//LIMITE A 2 DECIMALES
+    var interes = parseo*(0.085)*mesinteres;//LIMITE A 2 DECIMALES
     alert(interes);
     var total = interes + parseo;
     alert(total);
