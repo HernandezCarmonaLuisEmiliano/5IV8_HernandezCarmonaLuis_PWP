@@ -9,6 +9,7 @@ function validarn(e){
 
 //funcion para calcular el interes
 //DELIMITAR EL NUMERO DE DECIMALES
+//Ejercicio1
 function interes(){
     var valor = document.getElementById("cantidadi").value;
     var mes = document.getElementById("mesesi").value;
@@ -23,9 +24,40 @@ function interes(){
     document.getElementById("saldoi").value = "$ " + total; //LIMITE A 2 DECIMALES
 }
 
+//Ejercicio2
+function sueldomes(){
+    var valor1 = document.getElementById("ventai1").value;
+    var valor2 = document.getElementById("ventai2").value;
+    var valor3 = document.getElementById("ventai3").value;
+
+    var venta1 = parseFloat(valor1);
+    alert(venta1);
+    var venta2 = parseFloat(valor2);
+    alert(venta2);
+    var venta3 = parseFloat(valor3);
+    alert(venta3)
+
+    var ventatotal = venta1 + venta2 + venta3;
+    alert(ventatotal)
+    var comision = ventatotal*(0.10);
+    alert(comision)
+    var sueldofinal = ventatotal + comision;
+    alert(sueldofinal)
+
+    document.getElementById("sueldoi").value = "$ " + sueldofinal;
+
+}
+
 function borrari(){
+    //Borrar campos del Ejercicio1
     document.getElementById("saldoi").value = "";
     document.getElementById("cantidadi").value = "";
+
+    // Borrar campos del Ejercicio2
+    document.getElementById("sueldoi").value = "";
+    document.getElementById("ventai1").value = "";
+    document.getElementById("ventai2").value = "";
+    document.getElementById("ventai3").value = "";
 }
 
 /*
