@@ -108,6 +108,39 @@
             </div>
         </form>
     </div>
+<br>
+    <div class="container-e3">
+        <form method="post" name="formulario3" action="">
+            <label>Ejercicio 3: 1 Producto; Descuento: 15%</label>
+            <br>
+            <div class="container-table">
+                <table class="table">
+                    <tr>
+                        <td>Nombre del Producto: </td>
+                        <td><input type="text" name="producto" id="productoi" onkeypress="return validarnom(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Precio del Producto: </td>
+                        <td><input type="text" name="precio" id="precioi" onkeypress="return validarn(event)"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Precio Final" name="enviar" onclick="preciodesc()"></td>
+                    </tr>
+                    <tr>
+                        <td>Precio final: </td>
+                        <td><input type="text" name="total" id="totali" readonly="readonly" class="input_text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Borrar Datos" name="borrar" onclick="borrari()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
  <script src="./js/funcionese1.js" ></script>   
 </body>
 </html>

@@ -7,6 +7,15 @@ function validarn(e){
     return patron.test(codigo);
 }
 
+function validarnom(e){
+    var teclado = (document.all)? e.keyCode : e.which;
+    if (teclado == 8) return true;
+    var patron  = /[a-z \ A-Z]/;
+
+    var codigo = String.fromCharCode(teclado);
+    return patron.test(codigo);
+}
+
 //funcion para calcular el interes
 //DELIMITAR EL NUMERO DE DECIMALES
 //Ejercicio1
@@ -23,6 +32,7 @@ function interes(){
     alert(total);
     document.getElementById("saldoi").value = "$ " + total; //LIMITE A 2 DECIMALES
 }
+
 
 //Ejercicio2
 function sueldomes(){
@@ -48,6 +58,21 @@ function sueldomes(){
 
 }
 
+//Ejercicio3
+function preciodesc(){
+    var nombrep = document.getElementById("productoi").value;
+    var preciop = document.getElementById("precioi").value;
+
+    var precio1 = parseFloat(preciop);
+    alert(precio1);
+    var precio2 = precio1*(0.15);
+    alert(precio2);
+    var preciofinal = precio1 + precio2;
+    alert(preciofinal);
+
+    document.getElementById("totali").value = "Producto: "+ nombrep + "  $ " + preciofinal;
+}
+
 function borrari(){
     //Borrar campos del Ejercicio1
     document.getElementById("saldoi").value = "";
@@ -58,6 +83,10 @@ function borrari(){
     document.getElementById("ventai1").value = "";
     document.getElementById("ventai2").value = "";
     document.getElementById("ventai3").value = "";
+
+    //Borrar campos del Ejercicio3
+    document.getElementById("productoi").value = "";
+    document.getElementById("precioi").value = "";
 }
 
 /*
