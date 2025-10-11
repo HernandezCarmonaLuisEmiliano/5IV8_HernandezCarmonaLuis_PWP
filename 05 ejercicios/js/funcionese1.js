@@ -72,6 +72,34 @@ function preciodesc(){
 
     document.getElementById("totali").value = "Producto: "+ nombrep + "  $ " + preciofinal;
 }
+//Ejercicio4
+function calificacion(){
+    var parcial1 = document.getElementById("p1i").value;
+    var parcial2 = document.getElementById("p2i").value;
+    var parcial3 = document.getElementById("p3i").value;
+    var trabfin = document.getElementById("tfi").value;
+    var exam = document.getElementById("exi").value;
+
+    var p1 = parseFloat(parcial1);
+    alert(p1);
+    var p2 = parseFloat(parcial2);
+    alert(p2);
+    var p3 = parseFloat(parcial3);
+    alert(p3);
+    var C2 = parseFloat(trabfin);
+    alert(C2);
+    var C3 = parseFloat(exam);
+    alert(C3);
+
+    var C1 = (p1 + p2 + p3)/3;
+    alert(C1);
+    var CF = (C1*(0.55)) + (C2*(0.30)) + (C3*(0.15));
+    alert(CF);
+    
+    document.getElementById("cfi").value = CF;
+
+}
+
 
 function borrari(){
     //Borrar campos del Ejercicio1
@@ -87,6 +115,14 @@ function borrari(){
     //Borrar campos del Ejercicio3
     document.getElementById("productoi").value = "";
     document.getElementById("precioi").value = "";
+
+    //Borrar campos del Ejercicio4
+    document.getElementById("p1i").value = "";
+    document.getElementById("p2i").value = "";
+    document.getElementById("p3i").value = "";
+    document.getElementById("tfi").value = "";
+    document.getElementById("exi").value = "";
+    document.getElementById("cfi").value = "";
 }
 
 /*
