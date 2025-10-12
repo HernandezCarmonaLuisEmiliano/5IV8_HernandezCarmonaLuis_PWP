@@ -80,3 +80,24 @@ input[type="button"] {
     width: 100%;
     margin-top: 5px;
 }
+
+input[value="Calcular Interes"], input[value="Sueldo del Mes"], input[value="Precio Final"], input[value="Calificacion Final"], input[value="Porcentaje de Cada Uno"], input[value="Calcular edad"] {
+    background-color: #3498db;
+    color: white;
+}
+
+input[value="Calcular Interes"]:hover, input[value="Sueldo del Mes"]:hover, input[value="Precio Final"]:hover, input[value="Calificacion Final"]:hover, input[value="Porcentaje de Cada Uno"]:hover, input[value="Calcular edad"]:hover {
+    background-color: #2c81ba;
+    transform: translateY(-1px);
+}
+
+input[value="Borrar Datos"] {
+    background-color: #e74c3c;
+    color: white;
+    margin-top: 10px;
+}
+
+input[value="Borrar Datos"]:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+}
