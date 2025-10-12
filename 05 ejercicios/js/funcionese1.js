@@ -1,3 +1,4 @@
+//Validar solo numeros (opcional Decimales)
 function validarn(e){
     var teclado = (document.all)? e.keyCode : e.which;
     if (teclado == 8) return true;
@@ -7,6 +8,7 @@ function validarn(e){
     return patron.test(codigo);
 }
 
+//Validar solo letras
 function validarnom(e){
     var teclado = (document.all)? e.keyCode : e.which;
     if (teclado == 8) return true;
@@ -16,8 +18,16 @@ function validarnom(e){
     return patron.test(codigo);
 }
 
-//funcion para calcular el interes
-//DELIMITAR EL NUMERO DE DECIMALES
+//Validar solo numeros (sin decimal)
+function validarnsd(e){
+    var teclado = (document.all)? e.keyCode : e.which;
+    if (teclado == 8) return true;
+    var patron  = /[0-9]/;
+
+    var codigo = String.fromCharCode(teclado);
+    return patron.test(codigo);
+}
+
 //Ejercicio1
 function interes(){
     var valor = document.getElementById("cantidadi").value;
@@ -96,10 +106,56 @@ function calificacion(){
     var CF = (C1*(0.55)) + (C2*(0.30)) + (C3*(0.15));
     alert(CF);
     
-    document.getElementById("cfi").value = CF;
+    document.getElementById("cfi").value = CF.toFixed(2);
 
 }
 
+//Ejercicio5
+function cantidadgente(){
+    var h = document.getElementById("hi").value;
+    var m = document.getElementById("mi").value;
+
+    var canth = parseFloat(h);
+    alert(canth);
+    var cantm = parseFloat(m);
+    alert(cantm);
+
+    var totalgente = canth + cantm;
+    alert(totalgente);
+
+    var totalh = (canth/totalgente)*100;
+    alert(totalh);
+    var totalm = (cantm/totalgente)*100;
+    alert(totalm);
+
+    document.getElementById("porcentaje1i").value = totalh.toFixed(2) + "%";
+    document.getElementById("porcentaje2i").value = totalm.toFixed(2) + "%"
+}
+
+//Ejercicio6
+function calcularedad(){
+        const fechanacimiento = document.getElementById("fechanacimiento").value
+        const fechanacimientobjeto = new Date(fechanacimiento);
+        const mes = fechanacimientobjeto.getUTCMonth() + 1;
+        const año = parseFloat(fechanacimientobjeto.getUTCFullYear());
+        const dia = fechanacimientobjeto.getUTCDate();
+        const fechaactual = new Date();
+        const mesactual= fechaactual.getUTCMonth()+1;
+        const añoactual= parseFloat(fechaactual.getUTCFullYear());
+        const diaactual= fechaactual.getUTCDate();
+        var edad=0;
+        if((añoactual-año)<122 && año<añoactual){ //La maxima edad que ha logrado la humanidad son 122 años
+            edad=añoactual-año;
+            if(mesactual<mes || messactual===mes && diaactual < dia){
+                edad=edad-1;
+            }
+            document.getElementById("output_textop6").innerHTML="La edad que tienes es: " + edad + " años"
+        }else{
+            if(año>añoactual){alert("Ingrese un año pasado, no posterior")}else{
+                if((añoactual-año)>=122){alert("Ingrese una edad inferior a 122 años")}
+            }
+        }
+    }
 
 function borrari(){
     //Borrar campos del Ejercicio1
@@ -123,6 +179,10 @@ function borrari(){
     document.getElementById("tfi").value = "";
     document.getElementById("exi").value = "";
     document.getElementById("cfi").value = "";
+
+    //Borrar campos del Ejercicio5
+    document.getElementById("hi").value = "";
+    document.getElementById("mi").value = "";
 }
 
 /*
