@@ -129,12 +129,12 @@ function cantidadgente(){
     alert(totalm);
 
     document.getElementById("porcentaje1i").value = totalh.toFixed(2) + "%";
-    document.getElementById("porcentaje2i").value = totalm.toFixed(2) + "%"
+    document.getElementById("porcentaje2i").value = totalm.toFixed(2) + "%";
 }
 
 //Ejercicio6
 function calcularedad(){
-        const fechanacimiento = document.getElementById("fechanacimiento").value
+        const fechanacimiento = document.getElementById("fechai").value
         const fechanacimientobjeto = new Date(fechanacimiento);
         const mes = fechanacimientobjeto.getUTCMonth() + 1;
         const año = parseFloat(fechanacimientobjeto.getUTCFullYear());
@@ -144,16 +144,27 @@ function calcularedad(){
         const añoactual= parseFloat(fechaactual.getUTCFullYear());
         const diaactual= fechaactual.getUTCDate();
         var edad=0;
-        if((añoactual-año)<122 && año<añoactual){ //La maxima edad que ha logrado la humanidad son 122 años
+
+        if((añoactual-año)<110 && año<añoactual)
+            { 
             edad=añoactual-año;
-            if(mesactual<mes || messactual===mes && diaactual < dia){
+
+            if(mesactual<mes || mesactual===mes && diaactual < dia)
+            {
                 edad=edad-1;
             }
-            document.getElementById("output_textop6").innerHTML="La edad que tienes es: " + edad + " años"
-        }else{
-            if(año>añoactual){alert("Ingrese un año pasado, no posterior")}else{
-                if((añoactual-año)>=122){alert("Ingrese una edad inferior a 122 años")}
-            }
+            document.getElementById("edadi").value = edad + " años";
+        }
+        else
+        {
+            if(año>añoactual)
+                {
+                    alert("Ingrese un año pasado, no posterior")
+                }
+                else
+                {
+                if((añoactual-año)>=122){alert("Ingrese una edad inferior a 110 años")}
+                }
         }
     }
 
@@ -183,6 +194,9 @@ function borrari(){
     //Borrar campos del Ejercicio5
     document.getElementById("hi").value = "";
     document.getElementById("mi").value = "";
+
+    //Borrar campos del Ejercicio6
+    document.getElementById("fechai").value = "";
 }
 
 /*
