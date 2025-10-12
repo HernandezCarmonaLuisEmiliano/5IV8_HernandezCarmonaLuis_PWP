@@ -1,30 +1,71 @@
 body {
-    background-color: aqua
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-e1, .container-e2, .container-e3, .container-e4, .container-e5, .container-e6 {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 25px;
+    width: 90%;
+    max-width: 650px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #2c81ba; 
+    line-height: 1.4;
+}
+
+.container-table {
+    overflow-x: auto;
 }
 
 .table {
-    background-color: bisque;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.container-table{
-    background-color: yellowgreen;
+.table tr td {
+    padding: 10px 0;
+    vertical-align: middle;
 }
 
-.container-e1{
-    background-color: violet;
+.table tr td:first-child {
+    font-weight: 500;
+    width: 60%; 
+    padding-right: 15px;
 }
-.container-e2{
-    background-color: violet;
+
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
 }
-.container-e3{
-    background-color: violet;
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
 }
-.container-e4{
-    background-color: violet;
-}
-.container-e5{
-    background-color: violet;
-}
-.container-e6{
-    background-color: violet;
+
+footer a:hover {
+    text-decoration: underline;
+    color: #2c81ba;
 }
