@@ -1,0 +1,142 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+p {
+    width: 90%;
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+ol, ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: normal;
+    display: inline;
+    margin: 0;
+    color: #2c81ba;
+}
+
+ol:nth-child(2) h1 {
+    font-weight: 600;
+    color: #3498db;
+}
+
+.container-form {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2c81ba;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #c0e6fb;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.1s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #2c81ba;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #2c81ba;
+}
