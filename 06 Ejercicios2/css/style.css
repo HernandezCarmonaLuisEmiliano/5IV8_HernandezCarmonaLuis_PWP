@@ -1,0 +1,172 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.container-e1, .container-e2, .container-e3 {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px 30px;
+}
+
+h2 {
+    color: #2c81ba;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.problema-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.problema-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.problema-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+::placeholder {
+    color: #999;
+}
+
+.problema-button {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.1s;
+    width: 100%;
+    max-width: 400px;
+}
+
+.problema-button:nth-of-type(1) {
+    background-color: #3498db;
+    color: white;
+}
+
+.problema-button:nth-of-type(1):hover {
+    background-color: #2c81ba;
+    transform: translateY(-1px);
+}
+
+.problema-button:nth-of-type(2) { 
+    background-color: #e74c3c;
+    color: white;
+    margin-top: 10px !important;
+}
+
+.problema-button:nth-of-type(2):hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+}
+
+.problema-output {
+    width: 100%;
+    max-width: 400px;
+    min-height: 40px;
+    background-color: #ecf0f1;
+    border: 1px dashed #dddddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 15px;
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 1.1em;
+    color: #2c81ba;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.problema-table {
+    border-collapse: collapse;
+    margin: 10px;
+    text-align: center;
+}
+
+.problema-table th {
+    background-color: #2c81ba;
+    color: white;
+    padding: 8px 15px;
+    border: 1px solid #2c81ba;
+}
+
+.problema-table td {
+    padding: 5px;
+    border: 1px solid #dddddd;
+    font-weight: 500;
+    color: #444;
+}
+
+.problema-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.problema-table .problema-input {
+    width: 80px;
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+footer a:hover {
+    color: #2c81ba;
+    text-decoration: underline;
+}
