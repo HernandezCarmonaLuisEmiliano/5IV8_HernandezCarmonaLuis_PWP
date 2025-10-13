@@ -6,6 +6,18 @@
     <title>Ejercicios 2</title>
 </head>
 <body>
-    
+     <div class="container">
+        <div class="container-e1">
+            <h2> Problema 1 </h2>
+            <h3>Dada una lista de palabras separadas por un espacio, invierte el orden de dichas palabras. Las palabras pueden estar separadas unicamente por espacios</h3>
+            <div class="problema-content">
+                <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por un espacio: " id="p1_input" onkeypress="return validarl(event)"><br>
+                <button type="button" class="problema-button" style="margin-top: 1rem;" onclick="invertirpalabras()">Invertir Palabras</button><br>
+                 <button type="button" class="problema-button" style="margin-top: 1rem;" onclick="borrare1()">Borrar Datos</button>
+                <pre class="problema-output" id="p1_output">Respuesta</pre>
+            </div>
+        </div>
+    </div>
+<script src="./js/algoritmia.js"></script>
 </body>
 </html>
