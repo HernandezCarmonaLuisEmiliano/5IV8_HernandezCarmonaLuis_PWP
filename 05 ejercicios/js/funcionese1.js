@@ -61,7 +61,7 @@ function sueldomes(){
     alert(ventatotal)
     var comision = ventatotal*(0.10);
     alert(comision)
-    var sueldofinal = ventatotal + comision;
+    var sueldofinal = ventatotal + comision + 13000;
     alert(sueldofinal)
 
     document.getElementById("sueldoi").value = "$ " + sueldofinal;
