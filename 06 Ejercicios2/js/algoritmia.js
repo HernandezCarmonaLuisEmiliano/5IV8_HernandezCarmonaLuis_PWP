@@ -25,3 +25,47 @@ function borrare1(){
 function vector(){
     //le toca a lprofe
 }
+
+
+function validarl2(e){
+    var teclado = (document.all)? e.keyCode : e.which;
+    if(teclado == 8) return true;
+    var patron = /[A-Z,]/;
+
+    var codigo = String.fromCharCode(teclado);
+    return patron.test(codigo);
+}
+function calcularcu(){
+    var abcOk = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","W","V","X","Y","Z","ñ"];
+    var palabrasingresadas= document.getElementById("p3_input").value;
+    var arreglopalabras = palabrasingresadas.split(",");
+    var letra1 = "";
+    var letra2 = "";
+    var palabraaprobar = "";
+    var contador = 0;
+    var arreglocontadorcaracteresunicos = [];
+    alert(arreglopalabras)
+    if(palabrasingresadas.includes(" ")){
+        alert("Por favor, no ingrese espacios")
+    }else{
+        for(var j=0;j<arreglopalabras.length;j++){
+            palabraaprobar=arreglopalabras[j];
+            for(var i=0;i<abcOk.length;i++){
+            letra1=abcOk[i];
+                for(var k=0; k<palabraaprobar.length; k++){
+                letra2= palabraaprobar.charAt(k);
+                if(letra1===letra2){
+                    abcOk.splice(i,1);
+                    contador= contador+1;
+                }
+                }   
+            }
+            var abcOk = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","W","V","X","Y","Z","ñ"];
+            arreglocontadorcaracteresunicos.push(contador); 
+            contador=0;
+        }
+        contador = Math.max(...arreglocontadorcaracteresunicos);
+        contador = arreglocontadorcaracteresunicos.indexOf(contador);
+        document.getElementById("p3_output").innerHTML = "La palabra que tiene mas caracteres unicos es: " + arreglopalabras[contador];
+    }
+}
