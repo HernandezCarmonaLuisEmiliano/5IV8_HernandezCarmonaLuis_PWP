@@ -5,7 +5,7 @@ body {
     width: 940px;
     margin: 2% auto;
     min-height: 100%;
-    background-image: url(../images/adventure.jpg);
+    background-image: url(../images/pokemon.jpg);
     box-sizing: border-box;
 }
 
@@ -176,4 +176,8 @@ li::before {
     background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
     background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
     text-decoration: none;
+}
+
+.iniciarBoton{
+    padding: 2%;
 }
