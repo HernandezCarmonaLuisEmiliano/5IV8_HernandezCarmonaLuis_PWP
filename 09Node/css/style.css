@@ -1,0 +1,92 @@
+body {
+    /* Tipografía y color base de referencia */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    /* Centrado del contenedor principal en la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alineación al inicio para evitar que todo esté verticalmente centrado */
+    min-height: 100vh;
+    background-color: #f4f7f6; /* Fondo ligero para dar contraste a la tarjeta */
+}
+
+/* El elemento principal que actúa como tarjeta */
+.container-main {
+    max-width: 900px; /* Un poco más ancho para las imágenes */
+    width: 95%;
+    margin: 30px;
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco (como el .Centro de referencia) */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ENCABEZADO Y TEXTO                                                       */
+/* -------------------------------------------------------------------------- */
+h1 {
+    /* Estilo del header de referencia */
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2c3e50; /* Azul oscuro/gris de énfasis */
+    text-align: center;
+    border-bottom: 2px solid #3498db; /* Azul de contraste */
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    line-height: 1.2;
+}
+
+/* -------------------------------------------------------------------------- */
+/* IMÁGENES                                                                 */
+/* -------------------------------------------------------------------------- */
+.foto1, .foto2 {
+    max-width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block; /* Para centrar con margin auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 40px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* PIE DE PÁGINA Y ENLACES                                                  */
+/* -------------------------------------------------------------------------- */
+.container-footer {
+    position: fixed; /* Lo fija en la parte inferior para que siempre sea visible */
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+footer a {
+    /* Colores y estilo de los enlaces de referencia */
+    color: #e74c3c; /* Rojo de referencia */
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 15px;
+    padding: 5px;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #c0392b; /* Rojo oscuro en hover */
+    text-decoration: underline;
+}
