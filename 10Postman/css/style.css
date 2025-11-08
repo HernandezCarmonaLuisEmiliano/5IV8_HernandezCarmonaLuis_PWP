@@ -1,31 +1,24 @@
 * {
-    /* Mismo tamaño de fuente base */
     font-size: 20px;
-    box-sizing: border-box; /* Asegura que padding y borde no afecten el tamaño final */
+    box-sizing: border-box;
 }
 
 body {
-    /* Estilos base de referencia */
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f7f6; /* Fondo ligero para resaltar la tarjeta principal */
+    background-color: #f4f7f6;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
 
-/* -------------------------------------------------------------------------- */
-/* CONTENEDOR PRINCIPAL (Tipo .Centro)                                        */
-/* -------------------------------------------------------------------------- */
-
 .container-main {
-    /* Replicando el estilo .Centro para el contenedor del título */
     max-width: 900px;
-    width: 95%; /* Responsivo */
+    width: 95%;
     margin-top: 50px;
     padding: 30px;
     background-color: #ffffff;
@@ -36,24 +29,18 @@ body {
 }
 
 h1 {
-    /* Estilo del header de referencia */
     font-size: 2.2em;
     font-weight: 700;
-    color: #2c3e50; /* Azul oscuro/gris de énfasis */
+    color: #2c3e50;
     text-align: center;
-    border-bottom: 2px solid #3498db; /* Azul de contraste */
+    border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
-    margin: 0; /* Quitamos el margen superior e inferior por defecto */
+    margin: 0;
 }
-
-/* -------------------------------------------------------------------------- */
-/* GALERÍA DE IMÁGENES (.container-img)                                       */
-/* -------------------------------------------------------------------------- */
 
 .container-img {
     max-width: 900px;
     width: 95%;
-    /* Utilizamos CSS Grid para un diseño de galería responsiva */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
@@ -61,26 +48,20 @@ h1 {
 }
 
 .container-img .foto2 {
-    /* Estilo de tarjeta para cada imagen */
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra para destacar la imagen */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     display: block;
     transition: transform 0.3s ease;
 }
 
 .container-img .foto2:hover {
-    transform: translateY(-5px); /* Pequeño efecto al pasar el mouse */
+    transform: translateY(-5px);
 }
-
-/* -------------------------------------------------------------------------- */
-/* PIE DE PÁGINA Y ENLACES (Footer)                                          */
-/* -------------------------------------------------------------------------- */
 
 .container-footer {
     width: 100%;
-    /* Aseguramos que el footer esté debajo de todo el contenido */
     margin-top: auto; 
     padding: 20px 0;
     background-color: #ffffff;
@@ -90,8 +71,7 @@ h1 {
 }
 
 footer a {
-    /* Estilo de los enlaces de referencia */
-    color: #e74c3c; /* Rojo de referencia */
+    color: #e74c3c;
     text-decoration: none;
     font-weight: 700;
     margin: 0 20px;
@@ -100,6 +80,6 @@ footer a {
 }
 
 footer a:hover {
-    color: #c0392b; /* Rojo oscuro en hover */
+    color: #c0392b;
     text-decoration: underline;
 }
