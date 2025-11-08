@@ -1,0 +1,127 @@
+.cuerpo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    
+    /* Layout para centrar el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor-app {
+    max-width: 64rem;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.cabecera {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2c3e50; 
+    border-bottom: 2px solid #3498db; 
+    padding-bottom: 0.5rem;
+}
+
+.subtitulo {
+    font-size: 1.1em;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+.resultados-contenedor {
+    margin-top: 2rem;
+}
+
+.mensaje-carga {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.resultados-contenedor table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.resultados-contenedor thead {
+    background-color: #ebf5ff;
+    border-bottom: 2px solid #3498db;
+}
+
+.resultados-contenedor th {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.resultados-contenedor tbody {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+.resultados-contenedor td {
+    padding: 1rem 1.5rem;
+    font-size: 1em;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.resultados-contenedor tr:last-child td {
+    border-bottom: none;
+}
+
+.resultados-contenedor tbody tr td:first-child {
+    font-weight: 700;
+    color: #e74c3c; 
+}
+
+footer {
+    width: 100%;
+    max-width: 64rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+    background-color: transparent;
+}
+
+footer a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+footer a:hover {
+    color: #ffffff;
+    background-color: #e74c3c;
+    text-decoration: none;
+    border-color: #c0392b;
+}
