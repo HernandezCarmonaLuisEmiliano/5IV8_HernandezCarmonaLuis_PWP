@@ -1,0 +1,86 @@
+/* Estilos basados en el CSS de referencia, 
+    usando la paleta de colores: #2c3e50 (encabezados), #3498db (bordes/énfasis), 
+    #e74c3c (enlaces) y #333 (texto principal).
+*/
+
+* {
+    /* Mantenemos el tamaño base de 20px para una mejor lectura */
+    font-size: 20px;
+    box-sizing: border-box; /* Aseguramos que padding y borde no afecten el tamaño total */
+}
+
+body {
+    /* Estilos de fuente y color de la referencia */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ecf0f1; /* Un fondo gris claro para que la caja principal destaque */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo para el contenedor principal, similar a la clase .Centro de la referencia */
+.container-main {
+    max-width: 900px;
+    width: 90%;
+    /* Centrado y estilo de "tarjeta" */
+    margin: 50px auto 20px auto; 
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+h1 {
+    /* Estilos de encabezado basados en el 'header' de la referencia */
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2c3e50; /* Color oscuro para el título */
+    text-align: center;
+    border-bottom: 2px solid #3498db; /* Borde inferior azul de la referencia */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.imagen {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imagen img {
+    max-width: 100%; /* Asegura que la imagen sea completamente responsiva */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el pie de página */
+.footer {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto 50px auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #bdc3c7;
+    background-color: #f4f6f6;
+    border-radius: 5px;
+}
+
+/* Estilos de los enlaces */
+a {
+    color: #e74c3c; /* Color de enlace principal (rojo/naranja) */
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+    display: inline-block; /* Para aplicar padding/margin si fuese necesario */
+    padding: 5px 0;
+}
+
+a:hover {
+    color: #c0392b; /* Color de hover más oscuro */
+    text-decoration: underline;
+}
